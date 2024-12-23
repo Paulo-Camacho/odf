@@ -7,14 +7,8 @@ general
 
 order += "cpu_usage"
 order += "tztime local"
-order += "disk /"
-
-disk "/" 
-{
-    format = "DISK: %used/%total"
-}
 
 tztime local 
 {
-    format = "%l:%M:%S %p %Y-%m-%d"  # 12-hour format with AM/PM
+    format = "%Y-%m-%d %l:%M %p "  # 12-hour format with AM/PM
 }
