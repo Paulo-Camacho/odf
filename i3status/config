@@ -2,13 +2,12 @@ general
 {
     output_format = "i3bar"
     colors = true
-    interval = 5
+    interval = 1
 }
 
-order += "cpu_usage"
 order += "tztime local"
 
 tztime local 
 {
-    format = "%Y-%m-%d %l:%M %p "  # 12-hour format with AM/PM
+    format = "%a,  %Y/%m/%d | %I:%M:%S %p |"
 }
