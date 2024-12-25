@@ -9,5 +9,5 @@ order += "tztime local"
 
 tztime local 
 {
-    format = "%a,  %Y/%m/%d | %I:%M:%S %p |"
+    format = "%a, %Y/%m/%d %I:%M%p"
 }

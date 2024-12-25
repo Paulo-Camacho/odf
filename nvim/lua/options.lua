@@ -11,7 +11,6 @@ vim.opt.expandtab = true            -- tabs are spaces, mainly because of python
 
 -- UI config
 vim.opt.number = true               -- show absolute number
-vim.opt.relativenumber = true       -- add numbers to each line on the left side
 vim.opt.cursorline = true           -- highlight cursor line underneath the cursor horizontally
 vim.opt.splitbelow = true           -- open new vertical split bottom
 vim.opt.splitright = true           -- open new horizontal splits right
@@ -23,6 +22,16 @@ vim.opt.hlsearch = false            -- do not highlight matches
 vim.opt.ignorecase = true           -- ignore case in searches by default
 vim.opt.smartcase = true            -- but make it case sensitive if an uppercase is entered
 
+-- API
+vim.api.nvim_create_autocmd('TextYankPost', {
+    callback = function()
+        vim.highlight.on_yank({
+            higroup = 'IncSearch',  -- Use 'IncSearch' or create your own highlight group
+            timeout = 200,          -- Duration in milliseconds
+            on_visual = true,       -- Highlight in visual mode as well
+        })
+    end,
+})
 
 
 
