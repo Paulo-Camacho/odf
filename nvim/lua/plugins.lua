@@ -13,10 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     "git@github.com:tanvirtin/monokai.nvim.git",
-    "git@github.com:catppuccin/nvim.git", -- Note: fixed the typo in 'catppuccin'
-
-    "git@github.com:folke/tokyonight.nvim.git",
-
     "git@github.com:williamboman/mason.nvim.git",
     "git@github.com:williamboman/mason-lspconfig.nvim.git",
     "git@github.com:neovim/nvim-lspconfig.git",
@@ -25,7 +21,7 @@ require("lazy").setup({
         "git@github.com:onsails/lspkind.nvim.git",
         event = { "VimEnter" },
     },
-    -- Auto-completion engine
+
     {
         "git@github.com:hrsh7th/nvim-cmp.git",
         dependencies = {
@@ -39,7 +35,7 @@ require("lazy").setup({
             require("config.nvim-cmp")
         end,
     },
-    -- Code snippet engine
+
     {
         "git@github.com:L3MON4D3/LuaSnip.git",
         version = "v2.*",
