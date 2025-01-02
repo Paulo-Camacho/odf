@@ -1,4 +1,4 @@
-local colorscheme = 'monokai'
+local colorscheme = 'cyberdream'
 
 
 -- This prompts error code if not found

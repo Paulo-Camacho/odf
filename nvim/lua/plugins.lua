@@ -13,6 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     "git@github.com:tanvirtin/monokai.nvim.git",
+
+    "git@github.com:scottmckendry/cyberdream.nvim.git",
     "git@github.com:williamboman/mason.nvim.git",
     "git@github.com:williamboman/mason-lspconfig.nvim.git",
     "git@github.com:neovim/nvim-lspconfig.git",
