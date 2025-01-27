@@ -6,28 +6,29 @@
 local M = {}
 
 M.base46 = {
-	theme = "gruvbox_light",
+    theme = "catppuccin",
 
-  hl_override = {
-  Comment = { italic = true },
-  ["@comment"] = { italic = true },
-},
+    hl_override = {
+        Comment = { italic = true },
+        ["@comment"] = { italic = true },
+    },
 
 }
 M.nvdash = {
     load_on_startup = true,
     header = {
+        "",
         "██████╗  █████╗ ██╗   ██╗██╗     ██╗    ██╗██╗████████╗██╗  ██╗███╗   ██╗ ██████╗ ",
         "██╔══██╗██╔══██╗██║   ██║██║     ██║    ██║██║╚══██╔══╝██║  ██║████╗  ██║██╔═══██╗",
         "██████╔╝███████║██║   ██║██║     ██║ █╗ ██║██║   ██║   ███████║██╔██╗ ██║██║   ██║",
         "██╔═══╝ ██╔══██║██║   ██║██║     ██║███╗██║██║   ██║   ██╔══██║██║╚██╗██║██║   ██║",
         "██║     ██║  ██║╚██████╔╝███████╗╚███╔███╔╝██║   ██║   ██║  ██║██║ ╚████║╚██████╔╝",
         "╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝ ╚══╝╚══╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ",
+        "",
+        "",
     },
 
     buttons = {
-        { txt = "", hl = "NvDashFooter", no_gap = true, rep = true },
-        { txt = "─", hl = "NvDashFooter", no_gap = true, rep = true },
 
         { txt = "  Find File", keys = "o", cmd = "Telescope find_files" },
         { txt = "  Recent Files", keys = "fo", cmd = "Telescope oldfiles" },
@@ -35,17 +36,13 @@ M.nvdash = {
         { txt = "󱥚  Themes", keys = "th", cmd = ":lua require('nvchad.themes').open()" },
         { txt = "  Mappings", keys = "ch", cmd = "NvCheatsheet" },
 
-        { txt = "─", hl = "NvDashFooter", no_gap = true, rep = true },
-
-
-
-
     },
 }
+
 M.ui = {
     tabufline = {
         lazyload = false
-    }
+    },
 }
 
 return M
