@@ -8,9 +8,8 @@ TERM = "xterm-256color"
 
 [window]
 dynamic_padding = true
-opacity = 1
+opacity = 0.9 
 padding = { x = 0, y = 0 }
-decorations = "None"
 blur = true
 
 [keyboard]
@@ -20,36 +19,31 @@ bindings = [
 ]
 
 
-# Colors (Ayu Mirage)
+# Colors (Dracula)
 
-# Default Colors
+# Default colors
 [colors.primary]
-background = "#1f2430"
-foreground = "#cbccc6"
-bright_foreground = "#f28779"
+background = '#282a36'
+foreground = '#f8f8f2'
 
 # Normal colors
 [colors.normal]
-black = "#212733"
-red = "#f08778"
-green = "#53bf97"
-yellow = "#fdcc60"
-blue = "#60b8d6"
-magenta = "#ec7171"
-cyan = "#98e6ca"
-white = "#fafafa"
+black   = '#000000'
+red     = '#ff5555'
+green   = '#50fa7b'
+yellow  = '#f1fa8c'
+blue    = '#bd93f9'
+magenta = '#ff79c6'
+cyan    = '#8be9fd'
+white   = '#bbbbbb'
 
 # Bright colors
 [colors.bright]
-black = "#686868"
-red = "#f58c7d"
-green = "#58c49c"
-yellow = "#ffd165"
-blue = "#65bddb"
-magenta = "#f17676"
-cyan = "#9debcf"
-white = "#ffffff"
-
-[colors]
-draw_bold_text_with_bright_colors = true 
-transparent_background_colors = true
+black   = '#555555'
+red     = '#ff5555'
+green   = '#50fa7b'
+yellow  = '#f1fa8c'
+blue    = '#caa9fa'
+magenta = '#ff79c6'
+cyan    = '#8be9fd'
+white   = '#ffffff'

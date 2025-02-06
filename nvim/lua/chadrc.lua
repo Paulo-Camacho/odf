@@ -45,4 +45,6 @@ M.ui = {
     },
 }
 
+M.ui = {telescope = { style= "bordered" }}
+
 return M
