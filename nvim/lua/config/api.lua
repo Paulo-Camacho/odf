@@ -10,13 +10,15 @@
 --})
 
 -- spellcheck in md
-vim.api.nvim_create_autocmd("FileType", {
+vim.api.nvim_create_autocmd("FileType", 
+{
 	pattern = "markdown",
 	command = "setlocal spell wrap",
 })
 
 -- highlight text on yank
-vim.api.nvim_create_autocmd("TextYankPost", {
+vim.api.nvim_create_autocmd("TextYankPost", 
+{
 	pattern = "*",
 	callback = function()
 	vim.highlight.on_yank({ timeout = 300 })
@@ -24,13 +26,15 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- reload files on external change
---vim.api.nvim_create_autocmd("FocusGained", {
+--vim.api.nvim_create_autocmd("FocusGained", 
+--{
 --	pattern = "*",
 --	command = "checktime",
 --})
 
 -- restore cursor pos on file open
-vim.api.nvim_create_autocmd("BufReadPost", {
+vim.api.nvim_create_autocmd("BufReadPost", 
+{
 	pattern = "*",
 	callback = function()
 	local line = vim.fn.line("'\"")

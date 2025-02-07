@@ -1,6 +1,8 @@
 local map = vim.keymap.set
 local api = vim.api.nvim_set_keymap
 
+-- Alpha --
+map("n", "<ESC>", ":Alpha<CR>")
 
 --Buffers --
 map("n", "<S-l>", ":bnext<CR>")

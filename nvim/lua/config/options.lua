@@ -1,15 +1,15 @@
-local options = {
+local options = 
+{
 	laststatus = 3,
 	ruler = false, --disable extra numbering
 	showcmd = false,
+	showmode = false,
 	wrap = true, --toggle bound to leader W
 	mouse = "a", --enable mouse
-	clipboard = "unnamedplus", --system clipboard integration
 	history = 100, --command line history
 	swapfile = false, --swap just gets in the way, usually
 	backup = false,
 	undofile = true, -- THIS KEEPS UNDO AND REDOS PERSISTENT AFTER CLOSING
-	cursorline = true, --highlight line
 	ttyfast = true, --faster scrolling
 	smoothscroll = true,
 	
@@ -21,6 +21,9 @@ local options = {
 	cindent = true,
 	autoindent = false,
 	tabstop = 4, --visual width of tab
+    shiftwidth = 4,    -- Number of spaces for indentation
+    expandtab = true,
+	
 
 	foldmethod = "expr",
 	foldlevel = 99, --disable folding, lower #s enable
@@ -41,6 +44,6 @@ for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
-vim.diagnostic.config({
+vim.diagnostic.config ({
 	signs = false,
 })
