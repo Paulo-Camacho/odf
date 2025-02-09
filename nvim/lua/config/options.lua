@@ -1,9 +1,10 @@
 local options = 
 {
+
 	laststatus = 3,
 	ruler = false, --disable extra numbering
-	showcmd = false,
-	showmode = false,
+	showcmd = true,
+	showmode = true,
 	wrap = true, --toggle bound to leader W
 	mouse = "a", --enable mouse
 	history = 100, --command line history
@@ -12,7 +13,8 @@ local options =
 	undofile = true, -- THIS KEEPS UNDO AND REDOS PERSISTENT AFTER CLOSING
 	ttyfast = true, --faster scrolling
 	smoothscroll = true,
-	
+
+    clipboard = "unnamedplus",
 	number = true, --numbering lines
 	relativenumber = true, --toggle bound to leader rn and n 
 	numberwidth = 4,
