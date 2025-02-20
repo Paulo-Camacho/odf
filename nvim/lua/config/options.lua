@@ -19,6 +19,8 @@ local options =
 	relativenumber = true, --toggle bound to leader rn and n 
 	numberwidth = 4,
 
+    cursorline = true,
+
 	smarttab = true, --indentation stuff
 	cindent = true,
 	autoindent = false,
@@ -26,7 +28,6 @@ local options =
     shiftwidth = 4,    -- Number of spaces for indentation
     expandtab = true,
 	
-
 	foldmethod = "expr",
 	foldlevel = 99, --disable folding, lower #s enable
 	foldexpr = "nvim_treesitter#foldexpr()",

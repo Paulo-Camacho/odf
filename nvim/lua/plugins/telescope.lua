@@ -13,7 +13,7 @@ return {
                 layout_strategy = "horizontal",
                 layout_config = {
                     horizontal = {
-                        prompt_position = "top",
+                        prompt_position = "bottom",
                         preview_width = 0.7, -- Preview window takes 80% of the space
                         results_width = 0.6, -- Results window takes 20% of the space
                     },
