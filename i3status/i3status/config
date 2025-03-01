@@ -9,34 +9,28 @@ general
     separator = ""
 }
 
-
+# find where battery is
 #ls /sys/class/power_supply/
 #find /sys -type d -name "*BAT*"
 #cat /sys/class/power_supply/BAT1/uevent
 
-
-#order += "disk /"
-#order += "cpu_usage"
 order += "tztime local"
 order += "battery 0"
-
-#cpu_usage {
-#    format = "CPU: %usage"
-#}
+order += "disk /"
+order += "cpu_usage"
 
 tztime local 
 {
-    format = "%A %B %d, %I:%M:%S "
+    format = " %A %B %d, %H:%M:%S "
 }
-
 battery 0 {
   path = "/sys/class/power_supply/BAT1/uevent"
-    format = "%status %percentage  "
-    format_down = "No battery"
+    format = "| %status %percentage |"
+    format_down = "| No battery |"
 }
-
-# disk "/" {
-#  format = " /: %free"
-#}
-
-
+disk "/" {
+  format = " /: %free "
+}
+cpu_usage {
+    format = "| CPU: %usage |"
+}
