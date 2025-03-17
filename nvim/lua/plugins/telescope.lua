@@ -6,7 +6,7 @@ return {
         local telescope = require("telescope")
         telescope.setup({
             defaults = {
-                prompt_prefix = "   ",
+                prompt_prefix = "",
                 selection_caret = " ",
                 entry_prefix = " ",
                 sorting_strategy = "ascending",
@@ -18,12 +18,14 @@ return {
                         results_width = 0.6, -- Results window takes 20% of the space
                     },
                     width = 0.95, -- Overall width of the Telescope window
-                    height = 0.85, -- Overall height of the Telescope window
+                    height = 0.95, -- Overall height of the Telescope window
                 },
+                path_display = {"truncate"},  -- Or try "shorten" for shorter paths in results
                 mappings = {
                     n = { ["q"] = require("telescope.actions").close },
                 },
             },
         })
+
     end,
 }
